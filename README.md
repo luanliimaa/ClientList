@@ -22,11 +22,7 @@ Aqui eu vou mostrar pra vocês a usarem direto no Github.
 
 Você vai preencher com as informações do projeto, então dar o nome do repositório, colocar uma breve descrição e criar
 
-<img src="https://media.discordapp.net/attachments/831974152667398214/836828773067915274/unknown.png">
-
 Logo depois vai aparecer essa página um pouco cinza e confusa e com vários comandos (pode até perceber que alguns deles jpa usamos), mas o que você tem que fazer é bem simples, apenas copie o link que aparecer para você
-
-<img src="https://media.discordapp.net/attachments/831974152667398214/836828905859186708/unknown.png?width=1440&height=141">
 
 Lembra do conceito de `remote` que eu expliquei pra vocês no último vídeo? Nós iremos utilizá-lo agora
 
@@ -57,8 +53,6 @@ Se olharmos agora o nosso código no Github, ele terá sido alterado, e não só
 O verde com `+` e o vermelho com `-` mostra, os conteúdos que foram adicionados e editados dentro do código.
 Aqui nesse botão poderemos ver todos os commits já feitos anteriormente, então se clicarmos em algum deles, veremos exatamente o que havia sido alterado, além de claro, vermos o código como era. Incrível né?
 
-<img src="https://media.discordapp.net/attachments/831974152667398214/836830443617648670/unknown.png">
-
 ## Branch
 
 Até agora tudo o que fizemos de alterações e mandamos de commit, foi na nossa `main`, que é aquela linha do tempo principal.
@@ -80,8 +74,6 @@ Esse comando além de criar a branch já entra nela com o checkout, inclusive se
 
 Agora se olharmos o nosso Github, veremos que tem 2 branches, a `main` e a `botao`
 
-<img src="https://media.discordapp.net/attachments/812313742192279612/836820670037622854/unknown.png">
-
 Vamos supor que eu ainda não tivesse terminado de desenvolver o botão, eu poderia continuar tranquilamente na branch `botao` até terminar!
 
 Mas Rafa, e se eu precisasse por algum motivo voltar naquela branch `main` e desenvolver a partir do que deixei lá? Sem problemas, a única coisa que você precisa fazer nesse caso é `git checkout main`, e pra voltar depois é só `git checkout botao` novamente
@@ -102,8 +94,6 @@ Como vocês podem baixar meu código?
 
 Sempre que você entrar em um repositório, seja o seu ou o de qualquer outra pessoa, terá esse botão `Code`, que quando você clica aparece um link:
 
-<img src="https://media.discordapp.net/attachments/812313742192279612/836823564513705994/unknown.png">
-
 * Você irá copiar esse link e levar ele lá pro nosso terminal
 
 * O comando para puxar o projeto para a sua máquina é o `git clone https://github.com/rafaballerini/GitTutorial.git`
@@ -122,8 +112,6 @@ Mas Rafa quando eu fiz o clone do seu repositório ele não apareceu no meu Gith
 Existe a ferramenta `fork`, que é bem mais simples para fazer isso
 Você só precisa apertar nesse botão dentro do repositório e TCHANAM! Ele aparece automaticamente lá na sua conta:
 
-<img src="https://media.discordapp.net/attachments/831974152667398214/836826687634407434/unknown.png">
-
 ## Pull request
 
 O último conceito que quero ensinar para vocês é o de Pull Request, vamos entender como ele funciona:
@@ -136,30 +124,14 @@ O último conceito que quero ensinar para vocês é o de Pull Request, vamos ent
 
 Quando você for olhar o seu Github, verá que existe uma mensagem parecida com a seguinte:
 
-<img src="https://media.discordapp.net/attachments/831974152667398214/838990983852458035/unknown.png">
-
 Isso significa que a branch do seu repositório está 1 commit "na frente" da branch original
 
 O que você deve perceber agora é esse botão que aparece em seguida:
-
-<img src="https://media.discordapp.net/attachments/831974152667398214/838991711249235998/unknown.png">
 
 Ele servirá para caso você deseje enviar para o dono do repositório original uma solicitação de pull, ou seja, fazer com que ele puxe as alterações que você fez no seu repositório para o repositório dele, original
 
 Ao clicar nesse botão, você será direcionado para uma página que fará a avaliação se esse `pull request` terá conflitos ou não com o código no repositório original. Caso não tenha, bastão clicar no botão de `Create pull request`
 
-<img src="https://media.discordapp.net/attachments/831974152667398214/838992584893399100/unknown.png">
-
 Você irá colocar um nome intuitivo, que demonstre a funcionalidade adicionada e o ideal é que você também crie uma boa descrição do que desenvolveu, não somente explicando o que é, mas ensinando ao dono do repositório original a forma como ele poderá testar também
 
 Depois disso, basta esperar para que o dono da branch original aceite o seu pull request
-
-## Finalização
-
-Existem diversas outras funcionalidades do Git e do Github, porém tenho certeza que com tudo isso que vocês viram hoje vocês já conseguem desenvolver um projeto de uma forma bem legal
-
-Recomendo sempre vocês darem uma olhada na [documentação do Git](https://git-scm.com/doc), pois qualquer dúvida que apareça pode ser respondida por lá na explicação
-
-**Não esqueçam de deixar o like e se inscrever no [canal do Youtube](https://youtube.com/RafaellaBallerini) ❤**
-
-Até semana que vem, um beijo!
