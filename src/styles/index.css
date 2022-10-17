@@ -40,7 +40,7 @@ nav{
     justify-content: center;
 }
 
-nav button{
+nav a{
     box-sizing: border-box;
     background-color: transparent;
     border: 2px solid var(--blue);
@@ -49,9 +49,16 @@ nav button{
     color: var(--black);
     width: 45vw;
     max-width: 200px;
-    padding: 5px 0;
+    padding: 10px 0;
     border-radius: 8px;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: var(--blue);
+    color: var(--gray);
 }
 
 nav .selected{
@@ -80,7 +87,7 @@ main > ul{
 .card{
     box-sizing: border-box;
     width: 100%;
-    max-width: 450px;
+    max-width: 470px;
     background-color: var(--light-blue);
     border: 3px solid var(--blue);
     border-radius: 8px;

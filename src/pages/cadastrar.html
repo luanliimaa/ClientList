@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/cadastrar.css">
+    <title>Cadastrar Cliente</title>
+</head>
+<body>
+
+    <header>
+        <h1>Lista de Clientes</h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">Listar Clientes</a>
+        <a href="/src/pages/cadastrar.html" class="selected">Criar Clientes</a>
+        <a>Editar Clientes</a>
+        <a>Deletar Clientes</a>
+    </nav>
+
+    <main>
+        <form>
+            <h2>Dados Pessoais</h2>
+
+            <label for="name">Nome: </label>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome aqui">
+            
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email aqui">
+
+            <label for="cpf">CPF: </label>
+            <input type="number" name="cpf" id="cpf" placeholder="Digite seu cpf aqui">
+
+            <div class="form__inline">
+                <label for="age">Idade:
+                    <input type="number" name="age" id="age">
+                </label>
+
+                <div class="form__column">
+                    <p>Sexo</p>
+                    <div>
+                        <input type="radio" name="gender" id="male" value="Masculino">
+                        <label for="male">Masculino</label>
+                        <input type="radio" name="gender" id="female" value="Feminino">
+                        <label for="female">Feminino</label>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Endereço</h2>
+            <label for="street">Rua:</label>
+            <input type="text" id="street" name="street">
+
+            <label for="number">Número: </label>
+            <input type="number" id="number" name="number">
+
+            <label for="strict">Bairro: </label>
+            <input type="text" id="strict" name="strict">
+
+            <label for="cep">Cep: </label>
+            <input type="number" id="cep" name="cep">
+
+            <label for="city">Cidade: </label>
+            <input type="text" id="city" name="city">
+
+            <label for="state">Estado: </label>
+            <input type="number" id="state" name="state">
+
+            <button id="submit">Cadastrar</button>
+        </form>
+    </main>
+    
+    <script type="module" src="/src/scripts/cadastrar.js"></script>
+</body>
+</html>
