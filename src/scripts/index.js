@@ -4,12 +4,21 @@ class Render{
     static renderClients(array){
         const ul = document.getElementById("clientList")
 
+<<<<<<< HEAD
         array.forEach((client) => {
             const card = Render.renderCard(client)
+=======
+        ul.innerHTML = ""
+
+        array.forEach((client) => {
+            const card = Render.renderCard(client)
+            ul.append(card)
+>>>>>>> 4a329da2d9a3c69831475fef92f97f5f04c75171
         })
     }
 
     static renderCard(client){
+<<<<<<< HEAD
         const li = document.createElement("li")
         li.classList.add("card")
 
@@ -19,6 +28,32 @@ class Render{
         const h3 = document.createElement("h3")
         h3.innerText = "Dados Pessoais"
 
+=======
+        const li = Render.createElement("li")
+        li.classList.add("card")
+
+        const name = Render.createElement("h2", client.nome)
+        
+        const personalTitle = Render.createElement("h3", "Dados Pessoais")
+
+        const age = Render.createElement("p", `idade: ${client.idade}`)
+        const cpf = Render.createElement("p", `CPF: ${client.cpf}`)
+        const gender = Render.createElement("p", `Sexo: ${client.sexo}`)
+        const email = Render.createElement("p", `Email: ${client.email}`, "card__info--email")
+
+        const addressTitle = Render.createElement("h3", "Endereço")
+
+        const street = Render.createElement("p", `Rua: ${client.endereco.rua}`)
+        const number = Render.createElement("p", `Número: ${client.endereco.numero}`)
+        const district = Render.createElement("p", `Bairro: ${client.endereco.bairro}`)
+        const cep = Render.createElement("p", `Cep: ${client.endereco.cep}`)
+        const city = Render.createElement("p", `Cidade: ${client.endereco.cidade}`)
+        const state = Render.createElement("p", `Estado: ${client.endereco.estado}`)
+
+        li.append(name, personalTitle, age, cpf, gender, email, addressTitle, street, number, district, cep, city, state)
+
+        return li
+>>>>>>> 4a329da2d9a3c69831475fef92f97f5f04c75171
     }
 
     static createElement(element, text, classe){
@@ -33,6 +68,7 @@ class Render{
     }
 }
 
+<<<<<<< HEAD
 /*
 
     <li class="card">
@@ -58,3 +94,9 @@ class Render{
 */
 
 ApiRequests.getClients()
+=======
+
+
+const clients = await ApiRequests.getClients()
+Render.renderClients(clients)
+>>>>>>> 4a329da2d9a3c69831475fef92f97f5f04c75171
