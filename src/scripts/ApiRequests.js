@@ -18,4 +18,24 @@ export class ApiRequests {
         return clients
     }
 
+    static async signUpClient(body){
+        const newsUser = await fetch(`${this.baseUrl}/clientes`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(body)
+        })
+        .then(res => res.json())
+        .then(res => {
+            Toast.create("Cliente Cadastrado com sucesso!", "green", 5000)
+            return res
+        })
+        .catch(err => {
+            console.log(err)
+            Toast.create("Ops! Algo deu errado no cadastro do cliente", "red", 5000)
+        })
+        return newsUser
+    }
+
 }
