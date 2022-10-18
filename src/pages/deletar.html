@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/deletar.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Deletar Cliente</title>
+</head>
+<body>
+
+    <header>
+        <h1>Lista de Clientes</h1>
+    </header>
+
+    <nav>
+        <a href="/index.html">Listar Clientes</a>
+        <a href="/src/pages/cadastrar.html">Criar Clientes</a>
+        <a>Editar Clientes</a>
+        <a class="selected">Deletar Clientes</a>
+    </nav>
+
+    <main>
+        <form>
+            <h2>Selecione o cliente que deseja Deletar</h2>
+
+            <select name="select" id="select">
+                <option value="" disabled selected>Lista de clientes</option>
+            </select>
+
+            <button id="deletar">Deletar</button>
+        </form>
+    </main>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="/src/scripts/deletar.js"></script>
+</body>
+</html>

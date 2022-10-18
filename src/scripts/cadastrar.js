@@ -12,24 +12,22 @@ class SignupClient{
             event.preventDefault()
             
             const data = {
-                "nome": formElement.name.value,
-                "email": formElement.email.value,
-                "sexo": formElement.gender.value,
-                "idade": parseInt(formElement.age.value),
-                "cpf": formElement.cpf.value,
-                "endereco": {
-                    "estado": formElement.state.value,
-                    "cidade": formElement.city.value,
-                    "bairro": formElement.strict.value,
-                    "numero": formElement.number.value,
-                    "rua": formElement.street.value,
-                    "cep": formElement.cep.value
+                nome: formElement.name.value,
+                email: formElement.email.value,
+                sexo: formElement.gender.value,
+                idade: parseInt(formElement.age.value),
+                cpf: formElement.cpf.value,
+                endereco: {
+                    estado: formElement.state.value,
+                    cidade: formElement.city.value,
+                    bairro: formElement.strict.value,
+                    numero: formElement.number.value,
+                    rua: formElement.street.value,
+                    cep: formElement.cep.value
                 }
             }
     
-            console.log(data)
-            const res = await ApiRequests.signUpClient(data)
-            console.log(res)
+            await ApiRequests.signUpClient(data)
         })
 
     }
