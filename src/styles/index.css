@@ -32,11 +32,7 @@ header{
 
 nav{
     box-sizing: border-box;
-<<<<<<< HEAD
     width: 95vw;
-=======
-    width: 95%;
->>>>>>> 4a329da2d9a3c69831475fef92f97f5f04c75171
     margin: 0 auto 20px auto;
     display: flex;
     flex-wrap: wrap;
@@ -44,11 +40,7 @@ nav{
     justify-content: center;
 }
 
-<<<<<<< HEAD
-nav button{
-=======
 nav a{
->>>>>>> 4a329da2d9a3c69831475fef92f97f5f04c75171
     box-sizing: border-box;
     background-color: transparent;
     border: 2px solid var(--blue);
@@ -57,11 +49,6 @@ nav a{
     color: var(--black);
     width: 45vw;
     max-width: 200px;
-<<<<<<< HEAD
-    padding: 5px 0;
-    border-radius: 8px;
-    cursor: pointer;
-=======
     padding: 10px 0;
     border-radius: 8px;
     cursor: pointer;
@@ -71,33 +58,20 @@ nav a{
 
 nav a:hover{
     background-color: var(--blue);
-    color: var(--gray);
->>>>>>> 4a329da2d9a3c69831475fef92f97f5f04c75171
 }
 
 nav .selected{
     background-color: var(--blue);
-}
-
-nav .selected:hover{
     color: var(--gray);
 }
 
 main{
     box-sizing: border-box;
-<<<<<<< HEAD
     width: 95vw;
-=======
-    width: 95%;
->>>>>>> 4a329da2d9a3c69831475fef92f97f5f04c75171
     margin: 0 auto;
 }
 
 main > ul{
-<<<<<<< HEAD
-=======
-    box-sizing: border-box;
->>>>>>> 4a329da2d9a3c69831475fef92f97f5f04c75171
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -108,11 +82,7 @@ main > ul{
 .card{
     box-sizing: border-box;
     width: 100%;
-<<<<<<< HEAD
     max-width: 450px;
-=======
-    max-width: 470px;
->>>>>>> 4a329da2d9a3c69831475fef92f97f5f04c75171
     background-color: var(--light-blue);
     border: 3px solid var(--blue);
     border-radius: 8px;
@@ -133,14 +103,6 @@ main > ul{
 
 }
 
-<<<<<<< HEAD
-=======
-.card p{
-    margin-bottom: 3px;
-    font-size: 18px;
-}
-
->>>>>>> 4a329da2d9a3c69831475fef92f97f5f04c75171
 .card__info{
     display: flex;
     flex-direction: column;
@@ -154,9 +116,5 @@ main > ul{
 .card__info--email{
     white-space: nowrap;
     overflow-y: auto;
-<<<<<<< HEAD
     padding-bottom: 15px;
-=======
-    padding-bottom: 5px;
->>>>>>> 4a329da2d9a3c69831475fef92f97f5f04c75171
 }
