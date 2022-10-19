@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/styles/reset.css">
-    <link rel="stylesheet" href="/src/styles/cadastrar.css">
+    <link rel="stylesheet" href="/src/styles/editar.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <title>Cadastrar Cliente</title>
+    <title>Editar Cliente</title>
 </head>
 <body>
 
@@ -17,13 +17,23 @@
 
     <nav>
         <a href="/index.html">Listar Clientes</a>
-        <a href="/src/pages/cadastrar.html" class="selected">Criar Clientes</a>
-        <a href="/src/pages/editar.html">Editar Clientes</a>
+        <a href="/src/pages/cadastrar.html">Criar Clientes</a>
+        <a class="selected">Editar Clientes</a>
         <a href="/src/pages/deletar.html">Deletar Clientes</a>
     </nav>
 
     <main>
-        <form>
+        <form class="form__list">
+            <h2>Selecione o cliente que deseja Deletar</h2>
+
+            <select name="select" id="select">
+                <option value="" disabled selected>Lista de clientes</option>
+            </select>
+
+            <button id="search">Procurar</button>
+        </form>
+
+        <form class="form__data">
             <h2>Dados Pessoais</h2>
 
             <label for="name">Nome: </label>
@@ -72,6 +82,6 @@
     </main>
     
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script type="module" src="/src/scripts/cadastrar.js"></script>
+    <script type="module" src="/src/scripts/editar.js"></script>
 </body>
 </html>

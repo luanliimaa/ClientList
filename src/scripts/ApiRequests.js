@@ -56,4 +56,39 @@ export class ApiRequests {
         return deleteUser
     }
 
+    static async getClient(id){
+        const client = await fetch(`${this.baseUrl}/clientes/${id}`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+        .then(res => res.json())
+        .catch(err => {
+            Toast.create("Ops! Deu ruim", "red", 5000)
+            console.log(err)
+        })
+        return client
+    }
+
+    static async updateClient(id, body){
+        const newsUser = await fetch(`${this.baseUrl}/clientes/${id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(body)
+        })
+        .then(res => res.json())
+        .then(res => {
+            Toast.create("Dados do cliente editados com sucesso!", "green", 5000)
+            return res
+        })
+        .catch(err => {
+            console.log(err)
+            Toast.create("Ops! Algo deu errado no cadastro do cliente", "red", 5000)
+        })
+        return newsUser
+    }
+
 }
