@@ -38,4 +38,22 @@ export class ApiRequests {
         return newsUser
     }
 
+    static async deleteClient(id){
+        const deleteUser = await fetch(`${this.baseUrl}/clientes/${id}`, {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+        .then(res => {
+            Toast.create("Cliente Deletado com sucesso!", "green", 5000)
+            return res
+        })
+        .catch(err => {
+            console.log(err)
+            Toast.create("Ops! Algo deu errado ao deletar o cliente", "red", 5000)
+        })
+        return deleteUser
+    }
+
 }

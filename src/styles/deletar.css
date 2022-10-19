@@ -69,5 +69,51 @@ main{
     box-sizing: border-box;
     width: 95%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    box-sizing: border-box;
+    background-color: var(--light-blue);
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    width: 90%;
+    max-width: 500px;
+    height: 250px;
+}
+
+form h2{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+form select{
+    padding: 10px;
+    background-color: var(--light-gray);
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+}
+
+form button{
+    padding: 10px;
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--gray);
+    cursor: pointer;
+}
+
+form button:hover{
+    color: var(--black);
 }
 
